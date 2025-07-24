@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
 
-  res.setHeader('Access-Control-Allow-Origin', '*'); // ou substitua o * pela origem específica do seu front
-  res.setHeader('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', '*');
   res.setHeader('Access-Control-Allow-Headers', '*');
 
   if (req.method !== 'POST') {
